@@ -2,11 +2,13 @@
 
 > **Language**: [日本語](README.md) / English
 
-A Windows desktop app that pins Markdown files from your Obsidian vault as **sticky notes on your desktop**.
+A Windows desktop app that pins Markdown files (.md files) from your Obsidian vault as **sticky notes on your desktop**.
 
 - Editing is primarily done in **Obsidian**. Petatto.md is the place to **glance and check**.
 - Light editing inside notes (plain text edits, checkbox toggles) is also supported.
 - Designed for keeping TODOs, in-progress tasks, and notes you want to glance at on the desktop.
+
+🌐 **Product site**: <https://just2enough.github.io/petatto-md-site/>
 
 ## Privacy
 

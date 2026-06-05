@@ -2,11 +2,13 @@
 
 > **Language**: 日本語 / [English](README.en.md)
 
-Obsidian vault 内の Markdown を、Windows デスクトップに**付箋として貼り付ける**デスクトップアプリ。
+Obsidian vault 内の Markdown（.mdファイル） を、Windows デスクトップに**付箋として貼り付ける**デスクトップアプリ。
 
 - 編集の主は **Obsidian**。Petatto.md は「眺める・チェックする」場所
 - 付箋内での軽い編集（プレーンテキスト編集・チェックボックス切替）も可能
 - TODO・進行中タスク・今見ておきたいメモをデスクトップに常駐させる用途
+
+🌐 **製品紹介サイト**: <https://just2enough.github.io/petatto-md-site/>
 
 ## プライバシー
 
