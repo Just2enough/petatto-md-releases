@@ -14,7 +14,7 @@ A Windows desktop app that pins Markdown files (.md files) from your Obsidian va
 
 Petatto.md **does not collect, transmit, or store any telemetry, usage data, or analytics. All data stays on your machine.**
 
-Starting with v0.1.1, update checks are provided via `tauri-plugin-updater`. This only queries a `latest.json` to see whether a newer version exists and does not include any usage reporting. The check runs only when you click the **"最新版を確認"** (Check for updates) button at the top right of the main window — there is no automatic check on launch.
+Starting with v0.1.1, update checks are provided via `tauri-plugin-updater`. This only queries a `latest.json` to see whether a newer version exists and does not include any usage reporting. The check runs only when you click the **"Check for updates"** button at the top right of the main window — there is no automatic check on launch.
 
 ## Screenshots
 
@@ -25,7 +25,7 @@ Starting with v0.1.1, update checks are provided via `tauri-plugin-updater`. Thi
 
 **Main window** (vault settings / appearance / maintenance)
 
-![Main window](docs/screenshots/main.png)
+![Main window](docs/screenshots/main_en.png)
 
 **Edit mode**
 
@@ -55,21 +55,21 @@ The DB and logs remain after uninstallation. To remove them completely, delete t
 ## First Run and Vault Setup
 
 1. The main window opens with no vault configured.
-2. Click **"vault フォルダを選ぶ"** (Select vault folder) and pick the root folder of your Obsidian vault.
+2. Click **"Choose vault folder"** and pick the root folder of your Obsidian vault.
 3. Petatto.md scans the vault and displays any Markdown file whose frontmatter contains `petatto-md: true` as a sticky note.
 
-To change vaults later, click **"vault を変更..."** (Change vault...) in the vault card of the main window (a restart will be prompted).
+To change vaults later, click **"Change vault..."** in the vault card of the main window (a restart will be prompted).
 
-> Note: The current UI labels are in Japanese. English UI is on the roadmap — 👍 [this issue](https://github.com/Just2enough/petatto-md-releases/issues/1) if you want it.
+> Tip: You can switch the UI language between Japanese and English from the **Language** section in the main window (the app restarts to apply).
 
 ## Pinning a Markdown File
 
 ### Method 1: Pin via the tray menu
 
-Right-click the Petatto.md tray icon → **"新規付箋化..."** (Pin new note...) → pick a Markdown file from your vault.
+Right-click the Petatto.md tray icon → **"New sticky note..."** → pick a Markdown file from your vault.
 The `petatto-md: true` flag is automatically inserted into the file's frontmatter.
 
-![Tray menu](docs/screenshots/tasktray.png)
+![Tray menu](docs/screenshots/tasktray_en.png)
 
 ### Method 2: Edit the frontmatter directly (in Obsidian)
 
@@ -123,14 +123,16 @@ Elements rendered in view mode:
 
 ## System Tray
 
-Right-click the Petatto.md tray icon to see:
+**Left-click** the Petatto.md tray icon to temporarily lift all visible sticky notes to the foreground — a one-action shortcut to summon notes hidden behind other windows without opening the menu (same as **"Bring all to front"** in the menu below).
+
+**Right-click** to open the following menu:
 
 - **Note list** (visible `●` / hidden `○`): Click to toggle visibility
-- **全付箋を中央に集める** (Gather all to center): Cascade-arrange stray notes near the center of the primary monitor
-- **全付箋を最前面に表示** (Bring all to front): Temporarily lift all visible notes to the foreground
-- **新規付箋化...** (Pin new note...): Pick a Markdown file from your vault to pin
-- **設定...** (Settings...): Open the main window (vault operations, appearance, data folder access)
-- **終了** (Quit): Exit the app (all notes fade out and close)
+- **Gather all to center**: Cascade-arrange stray notes near the center of the primary monitor
+- **Bring all to front**: Temporarily lift all visible notes to the foreground
+- **New sticky note...**: Pick a Markdown file from your vault to pin
+- **Settings...**: Open the main window (vault operations, appearance, data folder access)
+- **Quit**: Exit the app (all notes fade out and close)
 
 ## Data Storage Locations
 
@@ -139,7 +141,7 @@ Right-click the Petatto.md tray icon to see:
 | Note positions, sizes, colors, font size (DB) | `%LOCALAPPDATA%\com.just2enough.petatto-md\petatto.sqlite` |
 | Logs | `%LOCALAPPDATA%\com.just2enough.petatto-md\logs\petatto.log` (5MB × 5 generations rotated) |
 
-The DB and logs live under the same parent folder. Click **"データフォルダを開く"** (Open data folder) in the main window to open this folder in Explorer (for bug reports; see "Troubleshooting & Crash Reports" below).
+The DB and logs live under the same parent folder. Click **"Open data folder"** in the main window to open this folder in Explorer (for bug reports; see "Troubleshooting & Crash Reports" below).
 
 Petatto.md does **not** write per-note state (position, color, etc.) into the Markdown files themselves. Only the `petatto-md: true` flag in the frontmatter is the source of truth for "is this pinned?".
 
@@ -149,7 +151,7 @@ Petatto.md **does not send crash reports automatically** (zero-telemetry policy)
 
 ### How to Collect Logs
 
-1. Click **"データフォルダを開く"** (Open data folder) in the main window — Explorer opens `%LOCALAPPDATA%\com.just2enough.petatto-md\`.
+1. Click **"Open data folder"** in the main window — Explorer opens `%LOCALAPPDATA%\com.just2enough.petatto-md\`.
 2. Inside the folder, copy `logs\petatto.log` (and rotated generations like `petatto.log.1` if needed).
 3. **Check for personal information**: Logs may include file names and paths from your vault. Redact or edit as needed before sharing.
 4. Report via one of the following:
@@ -159,7 +161,7 @@ Petatto.md **does not send crash reports automatically** (zero-telemetry policy)
 ### Common Issues
 
 - **No notes shown**: Check that the vault is set correctly (Main window → vault card). Make sure files have `petatto-md: true` in the frontmatter.
-- **A note went off-screen**: Use "全付箋を中央に集める" (Gather all to center) or "全付箋を最前面に表示" (Bring all to front) in the tray menu.
+- **A note went off-screen**: Use **"Gather all to center"** or **"Bring all to front"** in the tray menu (or **left-click** the tray icon to bring them to the front).
 - **Old notes remain after vault change**: Restart the app (prompted by the main window).
 - **SmartScreen warning**: When you first double-click the MSI, "**Windows によって PC が保護されました**" (Windows protected your PC) appears. Click **"詳細情報"** (More info) → **"実行"** (Run anyway). Because the MSI is not code-signed, the publisher field shows **"不明な発行元"** (Unknown publisher) — use at your own risk.
 
