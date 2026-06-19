@@ -119,7 +119,7 @@ Elements rendered in view mode:
 - Links (`[text](url)`) + raw http/https URLs (click to open in default browser)
 - Plain text
 
-**Unsupported** elements (images, code blocks, tables, blockquotes, horizontal rules, etc.) are shown as plain text (no crash). For the intentionally out-of-scope areas, see [Non-Goals](non_goals.md).
+**Unsupported** elements (images, code blocks, tables, blockquotes, horizontal rules, etc.) are shown as plain text (no crash). For the intentionally out-of-scope areas, see [Non-Goals](non_goals.en.md).
 
 ## System Tray
 
