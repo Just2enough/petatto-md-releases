@@ -23,7 +23,6 @@ Petatto.md is **not a replacement Markdown editor for Obsidian**. Editing happen
 - A UI for creating/editing user-defined palettes (only the two built-in palettes "Milky / Vivid", each a 4-color radio selection)
 - Single-color palettes (slots=1) or palettes with 5 or more slots (N>4)
 - Specifying color via frontmatter (e.g., `petatto-md-color: pink`)
-- Customizing font family or line height (fixed to Meiryo / `line-height: 1.6`)
 
 > Only the body font size has a 5-step selection UI (11/12/13/15/17px). The DB schema, `Palette` type, and `list_palettes` API are already structured to support future user-defined palettes, but there's no editing UI for now.
 
@@ -66,3 +65,5 @@ These aren't "never" — they leave room for future consideration as long as the
 - A UI for creating user-defined palettes (the DB schema, types, and API are ready)
 - Editing in a separate window (aimed at improving the editing experience on very small sticky notes)
 - An opt-in startup update check (off by default; only when you turn it on in settings does Petatto.md check GitHub's `latest.json` for a newer version at startup — nothing is sent beyond that update check)
+- Customizing fonts and text color (a font selection UI and free body text color)
+- Customizing line height (fixed to `line-height: 1.6`)
