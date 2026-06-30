@@ -52,6 +52,27 @@ Starting with v0.1.1, update checks are provided via `tauri-plugin-updater`. Thi
 Uninstall **Petatto-md** from "Apps & features" or "Settings → Apps".
 The DB and logs remain after uninstallation. To remove them completely, delete the folders listed under "Data Storage Locations" below.
 
+## About the Microsoft Store (MSIX) Edition
+
+> ✅ **Now available on the Microsoft Store** → **[Get it from the Microsoft Store](https://apps.microsoft.com/detail/9N77B4HPVRBB)**
+
+In addition to the GitHub MSI edition, Petatto.md is offered as an **MSIX edition** through the Microsoft Store. The Store edition has the following characteristics:
+
+- **No SmartScreen warning** (Microsoft signs the package, so the "Unknown publisher" prompt shown by the MSI edition does not appear).
+- **Clean install/uninstall** (installed and removed through the Store).
+
+### ⚠️ Running the MSI and Store editions together is not recommended
+
+Please use only one of them. Installing both splits how the state data (DB) is handled:
+
+- **If you install both fresh**: sticky-note state such as position and color is **managed separately** by each edition and is not synced between them.
+- **If you install the Store edition on a machine that already has the MSI edition**: the two **share the same state data (DB)**. Running them at the same time can conflict—for example, the same note may appear twice.
+
+### Migrating from the MSI edition to the Store edition
+
+- **The autostart setting (launch at Windows login) is not carried over.** In the Store edition, turn on "Launch automatically at Windows startup" again from the **Maintenance** card in the main window (the Store edition manages login autostart via the Windows StartupTask, so the MSI edition's setting does not transfer).
+- As noted above, on a machine where the MSI edition remains, the DB is shared. If you do not need to keep the MSI edition, uninstall it first and then install the Store edition to consolidate your state into one place.
+
 ## First Run and Vault Setup
 
 1. The main window opens with no vault configured.
