@@ -112,7 +112,33 @@ When saved, Petatto.md auto-detects it and shows the sticky note on your desktop
 
 ### Unpinning
 
-Click the **"×"** button on the sticky note header. The `petatto-md: true` flag is removed and the note disappears (the file itself remains).
+Click the **"×"** button on the sticky note header. The note is unpinned and disappears from your desktop (**the md file itself remains**).
+
+What happens to the frontmatter is up to you — pick one under **"When removing a sticky note with ×"** in the **Sticky notes** card of the main window.
+
+| Choice | The md after unpinning |
+|---|---|
+| **Delete the `petatto-md:` frontmatter key from the md file** (default) | The key is removed (and the whole frontmatter block disappears if no other keys remain) |
+| **Keep `petatto-md: false` in the file** | The key stays and only its value flips to `false`. Other frontmatter keys and comments are preserved |
+
+Keeping the flag lets you search for `petatto-md: false` in Obsidian to find **notes you used to have on your desktop**. The choice persists for subsequent unpins.
+
+Either way, you can pin the note again from **"New sticky note..."** in the tray menu (files with `petatto-md: false` can be selected too).
+
+> ⚠️ The sticky note's position, size, and color are discarded the moment you unpin. Re-pinning does not bring them back — it starts from the defaults.
+
+### Excluding a folder from watching (`.petatto-ignore`)
+
+For places like a Templates folder — where the `.md` files carry `petatto-md: true` but you don't want them as sticky notes — you can exclude the whole folder from watching.
+
+Put a single **empty, extensionless file named `.petatto-ignore`** inside the folder you want to exclude. Every `.md` under that folder (including nested subfolders, at any depth) is then skipped by the scan and never becomes a sticky note, even if it has `petatto-md: true`.
+
+- **How to create it**: Obsidian cannot create dot-files, so use **Explorer** or another OS-level tool (e.g. right-click inside the target folder → New → Text Document → rename it to `.petatto-ignore` and drop the extension). The contents can be empty.
+- **Correct order**: **place `.petatto-ignore` first**, then edit `petatto-md` on the notes. If you do it the other way around, the note appears as a sticky for a moment, but you can remove it with the **"×"** button on its header.
+- **Scope**: Placing the marker directly in the vault root excludes the entire vault. Files inside an excluded folder cannot be pinned from **"New sticky note..."** in the tray either (you'll see "This file is in an excluded folder and cannot be pinned").
+- **Undo**: Delete `.petatto-ignore` and the folder returns to being watched from the next startup (or the next change to a file under it).
+
+> If you use Obsidian's template feature, dropping in a `.petatto-ignore` is the reliable option. Renaming the folder to something dot-prefixed like `.Templates` is **not recommended** — Obsidian itself ignores dot-prefixed folders, so it would stop working as a templates folder.
 
 ## Sticky Note Operations
 
