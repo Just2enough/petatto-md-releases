@@ -32,6 +32,9 @@ Petatto.md is **not a replacement Markdown editor for Obsidian**. Editing happen
 - Following external renames/moves (from Obsidian, Explorer, etc.); these are handled individually as `<old path removed> + <new path added>`
 - Grouping or tagging sticky notes together
 - Following symbolic links (symlinks). A `.md` that is a symlink to a real file is not recognized as a sticky note (the vault scan targets regular files only and does not follow links)
+- A **settings UI** for choosing folders to exclude from watching (exclusion is done with a `.petatto-ignore` marker file; the source of truth lives only in the filesystem, not in the DB or settings)
+
+> Watch exclusion is offered as a gitignore-style mechanism — drop an empty `.petatto-ignore` file into the folder you want to exclude (everything under it is excluded at any depth; see the README). A settings screen for picking folders or a management UI listing exclusions is not planned for now — the source of truth is kept in a single filesystem marker so the Obsidian vault stays untouched.
 
 > App-initiated file renaming (from the sticky note header) is supported. Detecting a note that has "gone missing" (externally deleted/moved) while the app is running, and saving off your edits, is also supported. What's out of scope is *automatically following external renames*.
 
