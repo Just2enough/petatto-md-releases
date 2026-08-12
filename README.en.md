@@ -110,6 +110,20 @@ petatto-md: true
 
 When saved, Petatto.md auto-detects it and shows the sticky note on your desktop.
 
+### Method 3: Create a new md file and pin it right away
+
+When you want to put a fresh note on your desktop right now, you can do everything in Petatto.md — no need to create the file elsewhere first.
+
+Right-click the Petatto.md tray icon → **"New md file..."** to open the popup.
+
+![New md file popup](docs/screenshots/new_md_en.png)
+
+1. Enter a **file name** (`.md` is added automatically)
+2. **Save to** defaults to the vault root. Click **"Change..."** to pick another folder inside the vault (the choice is not remembered — the next time you open the popup it starts from the vault root again)
+3. Click **"Create"** — the md file is created with `petatto-md: true` and immediately appears as a sticky note on your desktop
+
+If an md file with the same name already exists, nothing is created and an error is shown (the existing file is left unchanged). **"Cancel"** or **Esc** closes the popup at any time.
+
 ### Unpinning
 
 Click the **"×"** button on the sticky note header. The note is unpinned and disappears from your desktop (**the md file itself remains**).
@@ -136,7 +150,7 @@ Put a single **empty, extensionless file named `.petatto-ignore`** inside the fo
 - **How to create it**: Obsidian cannot create dot-files, so use **Explorer** or another OS-level tool (e.g. right-click inside the target folder → New → Text Document → rename it to `.petatto-ignore` and drop the extension). The contents can be empty.
 - **Correct order**: **place `.petatto-ignore` first**, then edit `petatto-md` on the notes. If you do it the other way around, the note appears as a sticky for a moment, but **restarting the app** makes it stay away (your `.md` is left untouched). Do not use the **"×"** button here — it rewrites the `petatto-md` flag in the note itself to un-stick it, which is a different intent.
 - **Notes already on screen**: Adding `.petatto-ignore` later does not close sticky notes that are currently open. They simply **stop coming back from the next app start**.
-- **Scope**: Placing the marker directly in the vault root excludes the entire vault. Files inside an excluded folder cannot be pinned from **"New sticky note..."** in the tray either (you'll see "This file is in an excluded folder and cannot be pinned").
+- **Scope**: Placing the marker directly in the vault root excludes the entire vault. Files inside an excluded folder cannot be pinned from **"New sticky note..."** in the tray either (you'll see "This file is in an excluded folder and cannot be pinned"). Excluded folders can't be chosen as the save-to folder in **"New md file..."** either (you'll see "This folder is excluded from monitoring").
 - **Undo**: Delete `.petatto-ignore` and the folder returns to being watched from the next startup (or the next change to a file under it).
 
 > If you use Obsidian's template feature, dropping in a `.petatto-ignore` is the reliable option. Renaming the folder to something dot-prefixed like `.Templates` is **not recommended** — Obsidian itself ignores dot-prefixed folders, so it would stop working as a templates folder.
@@ -179,6 +193,7 @@ Elements rendered in view mode:
 - **Gather all to center**: Cascade-arrange stray notes near the center of the primary monitor
 - **Bring all to front**: Temporarily lift all visible notes to the foreground
 - **New sticky note...**: Pick a Markdown file from your vault to pin
+- **New md file...**: Enter a file name to create a new md file in your vault and pin it right away
 - **Settings...**: Open the main window (vault operations, appearance, data folder access)
 - **Quit**: Exit the app (all notes fade out and close)
 
