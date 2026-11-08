@@ -20,7 +20,7 @@ Petatto.md is **not a replacement Markdown editor for Obsidian**. Editing happen
 
 ## Sticky note customization scope
 
-- A UI for creating/editing user-defined palettes (only the two built-in palettes "Milky / Vivid", each a 4-color radio selection)
+- A UI for creating/editing user-defined palettes (only the three built-in palettes "Milky / Vivid / Dark", each a 4-color radio selection)
 - Single-color palettes (slots=1) or palettes with 5 or more slots (N>4)
 - Specifying color via frontmatter (e.g., `petatto-md-color: pink`)
 
@@ -46,6 +46,7 @@ Petatto.md is **not a replacement Markdown editor for Obsidian**. Editing happen
 - Syncing across multiple PCs (sharing positions, etc.)
 - Code signing (distributed as an unsigned .msi; the first-run SmartScreen warning is accepted)
 - Telemetry collection / automatic crash reporting (not done; logs are stored locally only, and you submit logs manually if there's a problem)
+- Turning the startup update check on by default, or checking periodically (not done; it's off by default, and only when you turn it on in settings does Petatto.md check GitHub's `latest.json` once at startup for a newer version — nothing is sent beyond that update check)
 
 ## Main window / editing experience
 
@@ -67,6 +68,5 @@ These aren't "never" — they leave room for future consideration as long as the
 
 - A UI for creating user-defined palettes (the DB schema, types, and API are ready)
 - Editing in a separate window (aimed at improving the editing experience on very small sticky notes)
-- An opt-in startup update check (off by default; only when you turn it on in settings does Petatto.md check GitHub's `latest.json` for a newer version at startup — nothing is sent beyond that update check)
 - Customizing fonts and text color (a font selection UI and free body text color)
 - Customizing line height (fixed to `line-height: 1.6`)

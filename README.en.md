@@ -14,16 +14,17 @@ A Windows desktop app that pins Markdown files (.md files) from your Obsidian va
 
 Petatto.md **does not collect, transmit, or store any telemetry, usage data, or analytics. All data stays on your machine.**
 
-Starting with v0.1.1, update checks are provided via `tauri-plugin-updater`. This only queries a `latest.json` to see whether a newer version exists and does not include any usage reporting. The check runs only when you click the **"Check for updates"** button at the top right of the main window — there is no automatic check on launch.
+Starting with v0.1.1, update checks are provided via `tauri-plugin-updater`. This only queries a `latest.json` to see whether a newer version exists and does not include any usage reporting. The startup check is off by default: only when you turn on **"Check for updates at startup"** in settings (v1.6.0 and later) does Petatto.md check once at startup. Otherwise, it connects only when you click the **"Check for updates"** button at the top right of the main window.
 
 ## Screenshots
 
-**Sticky notes (Milky palette / Vivid palette, 4 colors each)**
+**Sticky notes (3 palettes — Milky / Vivid / Dark — 4 colors each)**
 
 ![Milky palette](docs/screenshots/post_it_milky.png)
 ![Vivid palette](docs/screenshots/post_it_vivid.png)
+![Dark palette](docs/screenshots/post_it_dark.png)
 
-**Main window** (vault settings / appearance / maintenance)
+**Main window** (Vault / Sticky notes / Appearance / Language / Maintenance)
 
 ![Main window](docs/screenshots/main_en.png)
 
@@ -161,7 +162,7 @@ Put a single **empty, extensionless file named `.petatto-ignore`** inside the fo
 |---|---|
 | Move | Drag the header |
 | Resize | Drag the edges/corners (min 180×80px) |
-| Change color | Click the color button in the header — cycles through the 4 colors of the current palette (Milky / Vivid) |
+| Change color | Click the color button in the header — cycles through the 4 colors of the current palette (Milky / Vivid / Dark) |
 | Change font size | Click the `A±` button in the header — popover `▲ Size N/5 ▼` provides 5 steps |
 | Rename file | Double-click the file name in the header — inline edit (Enter to confirm, Esc to cancel) |
 | Enter edit mode | Double-click the body |

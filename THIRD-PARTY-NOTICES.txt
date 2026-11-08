@@ -679,33 +679,22 @@ Apache License 2.0 (Apache-2.0)
 --------------------------------------------------------------------------------
 以下のコンポーネントが本ライセンスの下で提供されています /
 The following components are provided under this license:
-  - windows-collections 0.2.0
   - windows-collections 0.3.2
-  - windows-core 0.61.2
   - windows-core 0.62.2
-  - windows-future 0.2.1
   - windows-future 0.3.2
   - windows-implement 0.60.2
   - windows-interface 0.59.3
-  - windows-link 0.1.3
   - windows-link 0.2.1
-  - windows-numerics 0.2.0
   - windows-numerics 0.3.1
-  - windows-result 0.3.4
+  - windows-registry 0.6.1
   - windows-result 0.4.1
-  - windows-strings 0.4.2
   - windows-strings 0.5.1
-  - windows-sys 0.59.0
   - windows-sys 0.60.2
   - windows-sys 0.61.2
-  - windows-targets 0.52.6
   - windows-targets 0.53.5
-  - windows-threading 0.1.0
   - windows-threading 0.2.1
   - windows-version 0.1.7
-  - windows 0.61.3
   - windows 0.62.2
-  - windows_x86_64_msvc 0.52.6
   - windows_x86_64_msvc 0.53.1
 
                                  Apache License
@@ -916,7 +905,7 @@ Apache License 2.0 (Apache-2.0)
 --------------------------------------------------------------------------------
 以下のコンポーネントが本ライセンスの下で提供されています /
 The following components are provided under this license:
-  - zerocopy 0.8.54
+  - web-time 1.1.0
 
                                  Apache License
                            Version 2.0, January 2004
@@ -1106,7 +1095,7 @@ The following components are provided under this license:
       same "printed page" as the copyright notice for easier
       identification within third-party archives.
 
-   Copyright 2023 The Fuchsia Authors
+   Copyright 2023 dAxpeDDa
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -1119,7 +1108,6 @@ The following components are provided under this license:
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.
-
 
 
 --------------------------------------------------------------------------------
@@ -1550,8 +1538,7 @@ Apache License 2.0 (Apache-2.0)
 --------------------------------------------------------------------------------
 以下のコンポーネントが本ライセンスの下で提供されています /
 The following components are provided under this license:
-  - json-patch 3.0.1
-  - winapi 0.3.9
+  - json-patch 4.2.0
 
                                  Apache License
                            Version 2.0, January 2004
@@ -1986,7 +1973,7 @@ Apache License 2.0 (Apache-2.0)
 --------------------------------------------------------------------------------
 以下のコンポーネントが本ライセンスの下で提供されています /
 The following components are provided under this license:
-  - jsonptr 0.6.3
+  - jsonptr 0.7.1
 
                                  Apache License
                            Version 2.0, January 2004
@@ -3883,7 +3870,7 @@ Apache License 2.0 (Apache-2.0)
 --------------------------------------------------------------------------------
 以下のコンポーネントが本ライセンスの下で提供されています /
 The following components are provided under this license:
-  - keyboard-types 0.7.0
+  - keyboard-types 0.8.3
 
                               Apache License
                         Version 2.0, January 2004
@@ -4092,10 +4079,10 @@ Apache License 2.0 (Apache-2.0)
 --------------------------------------------------------------------------------
 以下のコンポーネントが本ライセンスの下で提供されています /
 The following components are provided under this license:
-  - ahash 0.8.12
   - arc-swap 1.9.1
   - atomic-waker 1.1.2
   - base64 0.22.1
+  - base64 0.23.1
   - bitflags 1.3.2
   - bitflags 2.11.1
   - bstr 1.12.1
@@ -4116,7 +4103,7 @@ The following components are provided under this license:
   - glob 0.3.3
   - hashbrown 0.17.1
   - heck 0.5.0
-  - html5ever 0.38.0
+  - html5ever 0.39.0
   - httparse 1.10.1
   - hyper-rustls 0.27.9
   - idna 1.1.0
@@ -4124,21 +4111,22 @@ The following components are provided under this license:
   - indexmap 2.14.0
   - itertools 0.11.0
   - lock_api 0.4.14
-  - log 0.4.33
-  - markup5ever 0.38.0
+  - log 0.4.34
+  - markup5ever 0.39.0
   - mime 0.3.17
-  - muda 0.19.1
+  - muda 0.20.0
   - num-traits 0.2.19
   - once_cell 1.21.4
   - parking_lot 0.12.5
   - parking_lot_core 0.9.12
   - percent-encoding 2.3.2
   - png 0.17.16
+  - png 0.18.1
   - regex-automata 0.4.14
   - regex-syntax 0.8.10
   - regex 1.12.3
   - ring 0.17.14
-  - rustls 0.23.40
+  - rustls 0.23.46
   - scopeguard 1.2.0
   - serde_with 3.21.0
   - serde_with_macros 3.21.0
@@ -4149,14 +4137,14 @@ The following components are provided under this license:
   - string_cache 0.9.0
   - tempfile 3.27.0
   - tendril 0.5.0
-  - tray-icon 0.24.2
+  - tray-icon 0.25.1
   - unicode-segmentation 1.13.2
   - unicode-width 0.2.2
   - url 2.5.8
   - uuid 1.23.1
   - web_atoms 0.2.4
-  - window-vibrancy 0.6.0
-  - wry 0.55.1
+  - window-vibrancy 0.8.1
+  - wry 0.57.0
 
                               Apache License
                         Version 2.0, January 2004
@@ -5843,7 +5831,7 @@ Apache License 2.0 (Apache-2.0)
 以下のコンポーネントが本ライセンスの下で提供されています /
 The following components are provided under this license:
   - dpi 0.1.2
-  - tao 0.35.2
+  - tao 0.37.1
 
 Apache License
                            Version 2.0, January 2004
@@ -6052,8 +6040,7 @@ Apache License 2.0 (Apache-2.0)
 --------------------------------------------------------------------------------
 以下のコンポーネントが本ライセンスの下で提供されています /
 The following components are provided under this license:
-  - ctor-proc-macro 0.0.7
-  - ctor 0.8.0
+  - ctor 1.0.13
 
 Apache License
                            Version 2.0, January 2004
@@ -6266,13 +6253,13 @@ The following components are provided under this license:
   - anyhow 1.0.103
   - arraydeque 0.5.1
   - dirs-sys 0.5.0
-  - dirs 6.0.0
+  - dirs 7.0.0
   - dtoa 1.0.11
   - dunce 1.0.5
   - dyn-clone 1.0.20
   - erased-serde 0.4.10
   - fdeflate 0.3.7
-  - granit-parser 0.0.7
+  - granit-parser 1.3.0
   - ident_case 1.0.1
   - itoa 1.0.18
   - libc 0.2.186
@@ -6287,43 +6274,37 @@ The following components are provided under this license:
   - rustversion 1.0.22
   - ryu 1.0.23
   - semver 1.0.28
-  - serde-saphyr 0.0.29
+  - serde-saphyr 1.3.0
   - serde-untagged 0.1.9
   - serde 1.0.229
   - serde_core 1.0.229
   - serde_derive 1.0.229
   - serde_derive_internals 0.29.1
-  - serde_json 1.0.150
+  - serde_json 1.0.154
   - serde_repr 0.1.20
   - serde_yaml 0.9.34+deprecated
   - siphasher 1.0.3
   - syn 2.0.117
   - syn 3.0.2
   - sync_wrapper 1.0.2
-  - tauri-codegen 2.6.3
-  - tauri-macros 2.6.3
-  - tauri-plugin-autostart 2.5.1
-  - tauri-plugin-dialog 2.7.2
-  - tauri-plugin-fs 2.5.1
-  - tauri-plugin-log 2.9.0
-  - tauri-plugin-updater 2.10.1
-  - tauri-runtime-wry 2.11.4
-  - tauri-runtime 2.11.3
-  - tauri-utils 2.9.3
-  - tauri 2.11.5
-  - thiserror-impl 1.0.69
+  - tauri-codegen 2.7.1
+  - tauri-macros 2.7.1
+  - tauri-plugin-autostart 2.7.0
+  - tauri-plugin-dialog 2.8.3
+  - tauri-plugin-fs 2.7.1
+  - tauri-plugin-log 2.10.1
+  - tauri-plugin-updater 2.14.1
+  - tauri-runtime-wry 2.12.1
+  - tauri-runtime 2.12.1
+  - tauri-utils 2.10.1
+  - tauri 2.12.2
   - thiserror-impl 2.0.18
-  - thiserror 1.0.69
   - thiserror 2.0.18
   - time-core 0.1.9
-  - time-macros 0.2.31
-  - time 0.3.53
+  - time-macros 0.2.32
+  - time 0.3.55
+  - typed-path 0.13.0
   - typeid 1.0.3
-  - unic-char-property 0.9.0
-  - unic-char-range 0.9.0
-  - unic-common 0.9.0
-  - unic-ucd-ident 0.9.0
-  - unic-ucd-version 0.9.0
   - unicode-ident 1.0.24
   - utf-8 0.7.6
 
@@ -6656,8 +6637,9 @@ BSD 3-Clause "New" or "Revised" License (BSD-3-Clause)
 --------------------------------------------------------------------------------
 以下のコンポーネントが本ライセンスの下で提供されています /
 The following components are provided under this license:
-  - alloc-no-stdlib 2.0.4
-  - brotli-decompressor 5.0.0
+  - alloc-no-stdlib 3.0.0
+  - brotli-decompressor 6.0.1
+  - brotli 9.0.0
 
 Copyright (c) 2016 Dropbox, Inc.
 All rights reserved.
@@ -6716,8 +6698,7 @@ BSD 3-Clause "New" or "Revised" License (BSD-3-Clause)
 --------------------------------------------------------------------------------
 以下のコンポーネントが本ライセンスの下で提供されています /
 The following components are provided under this license:
-  - alloc-stdlib 0.2.2
-  - brotli 8.0.2
+  - alloc-stdlib 0.3.0
 
 Copyright (c) <year> <owner>. 
 
@@ -6865,7 +6846,7 @@ ISC License (ISC)
 --------------------------------------------------------------------------------
 以下のコンポーネントが本ライセンスの下で提供されています /
 The following components are provided under this license:
-  - rustls-webpki 0.103.13
+  - rustls-webpki 0.103.16
 
 Except as otherwise noted, this project is licensed under the following
 (ISC-style) terms:
@@ -6893,7 +6874,7 @@ MIT License (MIT)
 --------------------------------------------------------------------------------
 以下のコンポーネントが本ライセンスの下で提供されています /
 The following components are provided under this license:
-  - brotli 8.0.2
+  - brotli 9.0.0
 
 Copyright (c) 2009, 2010, 2013-2016 by the Brotli Authors.
 
@@ -6949,8 +6930,8 @@ MIT License (MIT)
 --------------------------------------------------------------------------------
 以下のコンポーネントが本ライセンスの下で提供されています /
 The following components are provided under this license:
-  - libsqlite3-sys 0.38.1
-  - rusqlite 0.40.1
+  - libsqlite3-sys 0.38.2
+  - rusqlite 0.40.2
 
 Copyright (c) 2014 The rusqlite developers
 
@@ -7052,34 +7033,6 @@ The following components are provided under this license:
   - base62 2.2.4
 
 Copyright (c) 2015 François Bernier
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
-
-
---------------------------------------------------------------------------------
-MIT License (MIT)
---------------------------------------------------------------------------------
-以下のコンポーネントが本ライセンスの下で提供されています /
-The following components are provided under this license:
-  - winreg 0.10.1
-
-Copyright (c) 2015 Igor Shaula
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -7540,7 +7493,7 @@ MIT License (MIT)
 --------------------------------------------------------------------------------
 以下のコンポーネントが本ライセンスの下で提供されています /
 The following components are provided under this license:
-  - cfb 0.7.3
+  - cfb 0.14.0
 
 MIT License
 
@@ -7632,7 +7585,7 @@ MIT License (MIT)
 --------------------------------------------------------------------------------
 以下のコンポーネントが本ライセンスの下で提供されています /
 The following components are provided under this license:
-  - infer 0.19.0
+  - infer 0.22.0
 
 MIT License
 
@@ -7693,7 +7646,7 @@ MIT License (MIT)
 --------------------------------------------------------------------------------
 以下のコンポーネントが本ライセンスの下で提供されています /
 The following components are provided under this license:
-  - rust-i18n 4.2.1
+  - rust-i18n 4.2.4
 
 MIT License
 
@@ -7723,7 +7676,7 @@ MIT License (MIT)
 --------------------------------------------------------------------------------
 以下のコンポーネントが本ライセンスの下で提供されています /
 The following components are provided under this license:
-  - urlpattern 0.3.0
+  - urlpattern 0.6.0
 
 MIT License
 
@@ -7783,7 +7736,7 @@ MIT License (MIT)
 --------------------------------------------------------------------------------
 以下のコンポーネントが本ライセンスの下で提供されています /
 The following components are provided under this license:
-  - auto-launch 0.5.0
+  - auto-launch 0.6.0
 
 MIT License
 
@@ -7813,7 +7766,7 @@ MIT License (MIT)
 --------------------------------------------------------------------------------
 以下のコンポーネントが本ライセンスの下で提供されています /
 The following components are provided under this license:
-  - dom_query 0.27.0
+  - dom_query 0.28.0
 
 MIT License
 
@@ -7849,12 +7802,12 @@ MIT License (MIT)
 以下のコンポーネントが本ライセンスの下で提供されています /
 The following components are provided under this license:
   - dpi 0.1.2
-  - minisign-verify 0.2.5
-  - rust-i18n-macro 4.2.1
-  - rust-i18n-support 4.2.1
+  - minisign-verify 0.3.0
+  - rust-i18n-macro 4.2.4
+  - rust-i18n-support 4.2.4
   - webview2-com-macros 0.8.1
-  - webview2-com-sys 0.38.2
-  - webview2-com 0.38.2
+  - webview2-com-sys 0.39.1
+  - webview2-com 0.39.1
 
 MIT License
 
@@ -7882,7 +7835,7 @@ MIT License (MIT)
 以下のコンポーネントが本ライセンスの下で提供されています /
 The following components are provided under this license:
   - tokio-util 0.7.18
-  - tokio 1.52.3
+  - tokio 1.54.1
 
 MIT License
 
@@ -8004,7 +7957,7 @@ MIT License (MIT)
 --------------------------------------------------------------------------------
 以下のコンポーネントが本ライセンスの下で提供されています /
 The following components are provided under this license:
-  - zip 4.6.1
+  - zip 9.1.3
 
 The MIT License (MIT)
 
@@ -8028,8 +7981,6 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-Some files in the "tests/data" subdirectory of this repository are under other
-licences; see files named LICENSE.*.txt for details.
 
 --------------------------------------------------------------------------------
 MIT License (MIT)
@@ -8190,6 +8141,36 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+
+
+--------------------------------------------------------------------------------
+MIT License (MIT)
+--------------------------------------------------------------------------------
+以下のコンポーネントが本ライセンスの下で提供されています /
+The following components are provided under this license:
+  - os_info 3.15.0
+
+The MIT License (MIT)
+
+Copyright (c) 2017 Stanislav Tkach
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
 
 --------------------------------------------------------------------------------
@@ -8640,8 +8621,8 @@ Mozilla Public License 2.0 (MPL-2.0)
 --------------------------------------------------------------------------------
 以下のコンポーネントが本ライセンスの下で提供されています /
 The following components are provided under this license:
-  - cssparser-macros 0.6.1
-  - cssparser 0.36.0
+  - cssparser-macros 0.7.1
+  - cssparser 0.37.0
 
 Mozilla Public License Version 2.0
 ==================================
@@ -9024,7 +9005,7 @@ Mozilla Public License 2.0 (MPL-2.0)
 以下のコンポーネントが本ライセンスの下で提供されています /
 The following components are provided under this license:
   - option-ext 0.2.0
-  - selectors 0.36.1
+  - selectors 0.38.0
 
 Mozilla Public License Version 2.0
 ==================================
@@ -9553,11 +9534,11 @@ JavaScript / frontend components (bundled into the webview)
 ================================================================================
 
 --------------------------------------------------------------------------------
-@tauri-apps/api@2.11.1
+@tauri-apps/api@2.12.4
   License: Apache-2.0 OR MIT
   Repository: https://github.com/tauri-apps/tauri
 --------------------------------------------------------------------------------
-[LICENSE_APACHE-2.0]
+[LICENSE-APACHE-2.0]
 
                                  Apache License
                            Version 2.0, January 2004
@@ -9736,7 +9717,7 @@ JavaScript / frontend components (bundled into the webview)
 
    END OF TERMS AND CONDITIONS
 
-[LICENSE_MIT]
+[LICENSE-MIT]
 MIT License
 
 Copyright (c) 2017 - Present Tauri Apps Contributors
@@ -9760,14 +9741,14 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 --------------------------------------------------------------------------------
-@tauri-apps/plugin-dialog@2.7.1
+@tauri-apps/plugin-dialog@2.8.3
   License: MIT OR Apache-2.0
   Repository: https://github.com/tauri-apps/plugins-workspace
 --------------------------------------------------------------------------------
   ※ 本パッケージは SPDX 識別子ファイルのみ同梱のため、同一 Tauri プロジェクトの
      @tauri-apps/api が提供する MIT / Apache-2.0 全文を参考として併記する。
 
-[LICENSE_APACHE-2.0]
+[LICENSE-APACHE-2.0]
 
                                  Apache License
                            Version 2.0, January 2004
@@ -9946,7 +9927,7 @@ SOFTWARE.
 
    END OF TERMS AND CONDITIONS
 
-[LICENSE_MIT]
+[LICENSE-MIT]
 MIT License
 
 Copyright (c) 2017 - Present Tauri Apps Contributors
@@ -9970,14 +9951,14 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 --------------------------------------------------------------------------------
-@tauri-apps/plugin-log@2.9.0
+@tauri-apps/plugin-log@2.10.1
   License: MIT OR Apache-2.0
   Repository: https://github.com/tauri-apps/plugins-workspace
 --------------------------------------------------------------------------------
   ※ 本パッケージは SPDX 識別子ファイルのみ同梱のため、同一 Tauri プロジェクトの
      @tauri-apps/api が提供する MIT / Apache-2.0 全文を参考として併記する。
 
-[LICENSE_APACHE-2.0]
+[LICENSE-APACHE-2.0]
 
                                  Apache License
                            Version 2.0, January 2004
@@ -10156,7 +10137,7 @@ SOFTWARE.
 
    END OF TERMS AND CONDITIONS
 
-[LICENSE_MIT]
+[LICENSE-MIT]
 MIT License
 
 Copyright (c) 2017 - Present Tauri Apps Contributors
@@ -10180,14 +10161,14 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 --------------------------------------------------------------------------------
-@tauri-apps/plugin-updater@2.10.1
+@tauri-apps/plugin-updater@2.14.1
   License: MIT OR Apache-2.0
   Repository: https://github.com/tauri-apps/plugins-workspace
 --------------------------------------------------------------------------------
   ※ 本パッケージは SPDX 識別子ファイルのみ同梱のため、同一 Tauri プロジェクトの
      @tauri-apps/api が提供する MIT / Apache-2.0 全文を参考として併記する。
 
-[LICENSE_APACHE-2.0]
+[LICENSE-APACHE-2.0]
 
                                  Apache License
                            Version 2.0, January 2004
@@ -10366,7 +10347,7 @@ SOFTWARE.
 
    END OF TERMS AND CONDITIONS
 
-[LICENSE_MIT]
+[LICENSE-MIT]
 MIT License
 
 Copyright (c) 2017 - Present Tauri Apps Contributors
@@ -10390,7 +10371,61 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 --------------------------------------------------------------------------------
-lucide-react@1.25.0
+@types/react@19.3.0
+  License: MIT
+  Repository: https://github.com/DefinitelyTyped/DefinitelyTyped
+--------------------------------------------------------------------------------
+[LICENSE]
+    MIT License
+
+    Copyright (c) Microsoft Corporation.
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE
+
+--------------------------------------------------------------------------------
+csstype@3.2.3
+  License: MIT
+  Repository: https://github.com/frenic/csstype
+--------------------------------------------------------------------------------
+[LICENSE]
+Copyright (c) 2017-2018 Fredrik Nicol
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+--------------------------------------------------------------------------------
+lucide-react@1.61.0
   License: ISC
   Repository: https://github.com/lucide-icons/lucide
 --------------------------------------------------------------------------------
@@ -10440,7 +10475,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 --------------------------------------------------------------------------------
-marked@18.0.6
+marked@18.1.1
   License: MIT
   Repository: https://github.com/markedjs/marked
 --------------------------------------------------------------------------------
@@ -10491,9 +10526,9 @@ Redistribution and use in source and binary forms, with or without modification,
 This software is provided by the copyright holders and contributors “as is” and any express or implied warranties, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose are disclaimed. In no event shall the copyright owner or contributors be liable for any direct, indirect, incidental, special, exemplary, or consequential damages (including, but not limited to, procurement of substitute goods or services; loss of use, data, or profits; or business interruption) however caused and on any theory of liability, whether in contract, strict liability, or tort (including negligence or otherwise) arising in any way out of the use of this software, even if advised of the possibility of such damage.
 
 --------------------------------------------------------------------------------
-react-dom@19.2.7
+react-dom@19.3.1
   License: MIT
-  Repository: https://github.com/facebook/react
+  Repository: https://github.com/react/react
 --------------------------------------------------------------------------------
 [LICENSE]
 MIT License
@@ -10519,9 +10554,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 --------------------------------------------------------------------------------
-react@19.2.7
+react@19.3.1
   License: MIT
-  Repository: https://github.com/facebook/react
+  Repository: https://github.com/react/react
 --------------------------------------------------------------------------------
 [LICENSE]
 MIT License
@@ -10547,9 +10582,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 --------------------------------------------------------------------------------
-scheduler@0.27.0
+scheduler@0.28.0
   License: MIT
-  Repository: https://github.com/facebook/react
+  Repository: https://github.com/react/react
 --------------------------------------------------------------------------------
 [LICENSE]
 MIT License
