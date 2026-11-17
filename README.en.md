@@ -151,7 +151,8 @@ Put a single **empty, extensionless file named `.petatto-ignore`** inside the fo
 - **How to create it**: Obsidian cannot create dot-files, so use **Explorer** or another OS-level tool (e.g. right-click inside the target folder → New → Text Document → rename it to `.petatto-ignore` and drop the extension). The contents can be empty.
 - **Correct order**: **place `.petatto-ignore` first**, then edit `petatto-md` on the notes. If you do it the other way around, the note appears as a sticky for a moment, but **restarting the app** makes it stay away (your `.md` is left untouched). Do not use the **"×"** button here — it rewrites the `petatto-md` flag in the note itself to un-stick it, which is a different intent.
 - **Notes already on screen**: Adding `.petatto-ignore` later does not close sticky notes that are currently open. They simply **stop coming back from the next app start**.
-- **Scope**: Placing the marker directly in the vault root excludes the entire vault. Files inside an excluded folder cannot be pinned from **"New sticky note..."** in the tray either (you'll see "This file is in an excluded folder and cannot be pinned"). Excluded folders can't be chosen as the save-to folder in **"New md file..."** either (you'll see "This folder is excluded from monitoring").
+- **Scope**: Placing the marker directly in the vault root excludes the entire vault. Files inside an excluded folder cannot be pinned from **"New sticky note..."** in the tray either (you'll see "This file is in a location excluded from monitoring and cannot be turned into a sticky note"). Excluded folders can't be chosen as the save-to folder in **"New md file..."** either (you'll see "This folder is excluded from monitoring").
+- **Names starting with `.`**: Even without `.petatto-ignore`, `.md` files whose name starts with `.` and `.md` files inside folders whose name starts with `.` never become sticky notes (they are treated as Obsidian's system locations). Choosing one from **"New sticky note..."** shows the same "excluded from monitoring" message as above.
 - **Undo**: Delete `.petatto-ignore` and the folder returns to being watched from the next startup (or the next change to a file under it).
 
 > If you use Obsidian's template feature, dropping in a `.petatto-ignore` is the reliable option. Renaming the folder to something dot-prefixed like `.Templates` is **not recommended** — Obsidian itself ignores dot-prefixed folders, so it would stop working as a templates folder.
@@ -216,8 +217,8 @@ Petatto.md **does not send crash reports automatically** (zero-telemetry policy)
 ### How to Collect Logs
 
 1. Click **"Open data folder"** in the main window — Explorer opens `%LOCALAPPDATA%\com.just2enough.petatto-md\`.
-2. Inside the folder, copy `logs\petatto.log` (and rotated generations like `petatto.log.1` if needed).
-3. **Check for personal information**: Logs may include file names and paths from your vault. Redact or edit as needed before sharing.
+2. Inside the folder, copy `logs\petatto.log` (and, if needed, older logs rotated out after 5MB, named `petatto_<date-time>.log`, e.g. `petatto_2026-11-14_10-30-00.log`).
+3. **Check for personal information**: Logs replace your vault location with `<vault>` and your user folder (`C:\Users\<name>`) with `%USERPROFILE%`, but not every occurrence is caught (for example, lines written by versions before this replacement was added, or when your vault is a drive root or the parent of your user folder). The names of files and folders inside your vault also remain. Before sharing, check for user names, folder names, and file names, and redact as needed.
 4. Report via one of the following:
    - **note article comments (Japanese)**: https://note.com/just2enough/n/n0e7c73253b99
    - **GitHub Issues (for bug reports with log attachments)**: https://github.com/Just2enough/petatto-md-releases/issues
